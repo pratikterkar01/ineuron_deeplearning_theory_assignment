@@ -1,0 +1,58 @@
+1.	What is the function of a summation junction of a neuron? What is threshold activation function?
+     Ans= The function that combines all inputs for the activation function And the threshold            activation function dose not give result until the inputs meets the threshold 
+
+2.	What is a step function? What is the difference of step function with threshold function?
+Ans=step function is non – linearity function in the neural network . It is not differentially 
+         function
+
+3.	Explain the McCulloch–Pitts model of neuron.
+Ans=McCulloch-Pitts Model of neuron is divide into two part one is summation and second is activation function . summation collects all input and add it with the weights and bais.  
+
+4.	Explain the ADALINE network model.
+Ans=ADALINE network model stands for the adaptive linear neuron .It uses the Delta rule which minimise the mean squared error 
+
+5.	What is the constraint of a simple perceptron? Why it may fail with a real-world data set?
+Ans=simple perceptron required a linear input and give bipolar input (0,1).
+If we provide the non-linear function provide  then it is difficult for classification
+
+6.	What is linearly inseparable problem? What is the role of the hidden layer?
+Ans = when the data is not categorised by the linear boundary then that’s problem is linearly inseparable problem . The hidden layer are used to simplify the complexity of the input it combines the input as per the number of the neuron and give one output .we can select the number of hidden layer as per the problem generally we use two hidden layer. But not select many hidden layer because it results overfitting 
+
+7.	Explain XOR problem in case of a simple perceptron.
+       Ans=XOR or Exclusive OR gives boolen type of output if inputs of perceptron are different then it     give output as true otherwise False 
+
+8.	Design a multi-layer perceptron to implement A XOR B.
+A	B	Output
+0	0	0
+0	1	1
+1	0	1
+1	1	1
+
+
+9.	Explain the single-layer feed forward architecture of ANN.
+Ans=It is Simple architecture not working in the loop, its flow is simple input given to the input layer given to the hidden layer the perceptron with summation and activation function
+Transferred to output layer 
+10.	Explain the competitive network architecture of ANN.
+
+11.	Consider a multi-layer feed forward neural network. Enumerate and explain steps in the backpropagation algorithm used to train the network.
+12.	What are the advantages and disadvantages of neural networks?
+Advantages=
+-it is not required to train the model again and again
+-it work with the linear as well as non-linear function also
+-neural network are flexible 
+Disadvantages
+-it have black box nature 
+-it requires much more data to train
+-it is also depend on the hardware also
+13.	Write short notes on any two of the following:
+1.	Biological neuron
+Ans= Biological neuron contain dendrite, Cell ,Axon. Its have one network called neural network . all network work on impulse which transfer the message from one neuron to another and finally give output  
+2.	ReLU function
+=it stands for Rectified Linear Activation function , it is one type of activation function and very efficient
+3.	Single-layer feed forward ANN
+=feed forward artificial neural network not work in loop having one flow of data from input layer to output via hidden layer to decrease the complexity of the problem to give correct prediction
+4.	Gradient descent
+=gradient descent is the activation function used to train neural network 
+5.	Recurrent networks
+=In the recurrent neural network the prediction is depend on with  previous one 
+
