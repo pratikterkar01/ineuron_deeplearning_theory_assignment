@@ -1,0 +1,95 @@
+1.How would you describe TensorFlow in a short sentence? What are its main features? Can
+you name other popular Deep Learning libraries?
+Ans:-Tensorflow is the opensource framework used in for Deep learning it is created by google .
+It is the most useful as well as the giving various changes in the field of the Deep learning.
+some features about the Tensorflow
+1.Predefined Models Developed easily:-
+TensorFlow has high level of APIs That will makes the high computational Power Which makes complex 
+Neural Network
+2.Complex Numeric Computation:-As We have the various Mathamatical calculations so with the help of the tensorflow it can be best done in 
+this tensorflow with the complex algorithms
+3.hardware :-In the early days the devopment in the Deep learning in the Deep Learning
+that it works well in the GPU also so the tensorflow has support of the both CPU and GPU also
+4.Various Predefined features:-as the complex Algorithms are need to run various we need to apply it,it is difficult to apply them as it is
+so tensorflow is given the various predefined structure to ease the further Devolpment in this field
+The libraries Required for the Deep learning :
+1.TensorFlow :- latest version:-2.13.0-rc2
+                Devopped By :-Google Brain team
+                release year:-2015
+2.PyTorch :- latest version=2.0
+             Devolped by:-Facebook
+             release year:-2016
+3.Keras:-latest version=2.14.0
+             
+3.Keras:-
+4.Theano:-
+5.MXNet:-
+6.Caffe
+7.Microsoft Congnitive Toolkit
+8.Numpy
+9.Pandas 
+10.Scikit-learn
+
+
+2.Is TensorFlow a drop-in replacement for NumPy? What are the main differences between
+the two?
+Ans:- Numpy is the librari used for the numerical python it is basically used for an array . Tensorflow is used for the Deep learning handling the neural networks 
+it is handling the various types of data like matrics, array basically for helping the tensorflow we can use Numpy
+But again numpy given numpy array and tensorflow is working on the tensor type of data in this type of the data the vectors
+can be more efficiently ploted and find the exact distance between them in casse of the numpy we did nit have that feature it only handdle the numearical data
+
+3.Do you get the same result with tf.range(10) and tf.constant(np.arange(10))?
+Ans:=No,Both are creating the different data type in the first code ot os dorectly convrting to The
+tensor data type and in the second data type frist it get data as numpy array and then it is converting into the tensor in this conversion the data type changes
+
+4.. Can you name six other data structures available in TensorFlow, beyond regular tensors?
+Ans:-
+1.Placeholder:-This type of the data structure is used for providing the data to the graph,it is used in below version of 2.0
+afterwords it can be stoped and using numpy arrays
+2.Sparse Tensor:-This type of the data structure is used for the sparse data type,
+sparse means the the data contaning most of the 0 element
+3.RaggedTenso:-This is used for the representation of the length,such as length of the varible
+4.Dataset:- This provides the API for the building pipelines 
+5.Constant:- it is immutable fixed value
+6.Variable:-it is mutable woth some initial values.Variables are typically used for weights and biases in neural networks.
+
+
+5.A custom loss function can be defined by writing a function or by subclassing
+the keras.losses.Loss class. When would you use each option?
+Ans:- Use subclassing keras.losses.Loss when your custom loss function is more complex, requires trainable parameters, or involves additional customization 
+beyond the loss computation itself. Subclassing provides a more organized and extensible way to define and manage custom loss functions in your models.
+
+6.Similarly, a custom metric can be defined in a function or a subclass of keras.metrics.Metric.
+When would you use each option?
+Ans:-use a simple function for straightforward custom metrics without any internal state or trainable parameters. Use subclassing keras.metrics.Metric when your custom metric is more complex,
+ requires stateful operations, or involves additional customization beyond the metric computation itself. Subclassing provides a more organized and extensible way to define and manage custom 
+ metrics in your models.
+
+7.When should you create a custom layer versus a custom model?
+Ans:-
+The decision to create a custom layer or a custom model in TensorFlow and Keras depends on your specific use case and the level of abstraction and customization you require for your
+neural network architecture. Here are guidelines for when to create a custom layer versus a custom model
+
+8.What are some use cases that require writing your own custom training loop?
+Ans:-Building custom loops with specific optimization tech. or customise the loss functions
+that requires complex computations custom models provoides fexibility 
+
+9.Can custom Keras components contain arbitrary Python code, or must they be convertible to
+TF Functions?
+Ans:-In TensorFlow and Keras, custom components such as custom layers, custom loss functions, and custom metrics should ideally be convertible to TensorFlow functions (TF Functions)
+for optimal performance and compatibility with TensorFlow's graph execution mode. TensorFlow provides several mechanisms to ensure that custom components are compatible with TF Functions:
+
+10.What are the main rules to respect if you want a function to be convertible to a TF Function?
+Ans:-1.Use TensorFlow Operations:
+2.Avoid Defining Tensors Outside of the Function
+3.No Python Control Flow
+4.no Python Lists or Dictionaries
+5.No Print Statements or Debugging
+6.No Global Variables:
+7.No Randomness or Non-Determinism
+8.Signature and Argument Names
+
+11.When would you need to create a dynamic Keras model? How do you do that? Why not
+make all your models dynamic?
+Ans:-Dynamic Keras models are models that can change their architecture during runtime, meaning they can have varying numbers of layers or different layer configurations for
+different inputs or conditions.It is create when the archetecture are depend upon the dynamic or runtime factor
